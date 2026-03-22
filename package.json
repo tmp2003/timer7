@@ -1,0 +1,9 @@
+{
+  "name": "minha-app-funcoes",
+  "version": "1.0.0",
+  "description": "Trabalho prático de Serverless",
+  "scripts": {
+    "start": "func start"
+  },
+  "dependencies": {}
+}
