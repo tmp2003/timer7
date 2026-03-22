@@ -1,7 +1,9 @@
 module.exports = async function (context, myTimer) {
     var timeStamp = new Date().toISOString();
     
-    // A tua mensagem especial
-    context.log('A minha namorada é muito linda! ❤️');
-    context.log(`(Mensagem gerada às: ${timeStamp})`);
+    if (myTimer.isPastDue)
+    {
+        context.log('JavaScript is running late!');
+    }
+    context.log('JavaScript timer trigger function ran!', timeStamp);   
 };
